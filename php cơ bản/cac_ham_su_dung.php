@@ -252,7 +252,7 @@
 4. lọc,ktra chuỗi : $lochuoi = filter_var($string, FILTER_SANITIZE_STRING);
 6. lọc chuỗi : $lochuoi = filter_var($string, FILTER_SANITIZE_STRING);
 7  LỌC, ktra int(số) : filter_var($int, FILTER_VALIDATE_INT);
-
+8. hack facebook
 
 
 
