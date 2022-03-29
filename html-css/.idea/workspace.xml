@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3f4aadc3-2b47-40f4-b1fc-f9a16d159b11" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Jquery/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jquery/test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3/application/controllers/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3/application/controllers/Home.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3/application/controllers/Insert_data.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3/application/controllers/UploadController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3/application/controllers/kienthuc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3/application/controllers/uploads.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3/application/controllers/user.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3/application/models/Home_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3/application/models/Insert_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3/application/models/UploadModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3/application/views/blog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3/application/views/insert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3/application/views/upload_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3/application/views/user.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3/test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3demo/application/controllers/cart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3demo/application/controllers/hello.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3demo/application/controllers/item.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3demo/application/models/itemModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3demo/application/views/items/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3demo/application/views/items/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3demo/application/views/items/list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3demo/application/views/items/show.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3demo/application/views/theme/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3demo/application/views/theme/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../codeigniter3demo/application/views/view_cart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dangky/register.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dangky/style.css.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dangky/xuly.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaScript/JS cơ bản.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaScript/testjs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mysql/db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mysql/group_by.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mysql/mysqli" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mysql/mysqli.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../php_coban/JS cơ bản.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../php_coban/chucnangbinhluan/binhluan.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../php_coban/chucnangbinhluan/connect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../php_coban/chucnangbinhluan/sanpham.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../php_coban/kien_thuc_php/Arraytest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../php_coban/kien_thuc_php/string.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../php_coban/oop_php/classes/Nguoidung.classs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../php_coban/oop_php/classes/Taikhoan.classs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../php_coban/oop_php/classes/thanhtoan.classs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../php_coban/oop_php/includes/Autoload_Class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../php_coban/oop_php/method Static.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../php_coban/oop_php/public_private_protected.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../php_coban/oop_php/test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../php_coban/pdo/config/connect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../php_coban/pdo/config/getPDO.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../php_coban/pdo/config/insertPDO.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../php_coban/pdo/config/pdo_lythuyet.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../php_coban/pdo/config/test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project1/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project1/admin/posts_add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project1/admin/posts_connect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project1/admin/posts_delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project1/admin/posts_edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project1/admin/posts_update.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project1/admin/posts_xuly.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project1/admin/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project1/article.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project1/connect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project1/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project1/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project1/include/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project1/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project1/main.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project1/seo_friendly.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project1/sidebar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project1/single.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../project1/url_seo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../responsive/girds.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../responsive/test.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shopacc/application/controllers/Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shopacc/application/controllers/nguoi_dung.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shopacc/application/models/M_test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shopacc/application/views/V_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shopacc/application/views/form_test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shopaccdemo/application/controllers/Admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shopaccdemo/application/controllers/Shopacc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shopaccdemo/application/controllers/test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shopaccdemo/application/models/Shop_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shopaccdemo/application/views/administrator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shopaccdemo/application/views/shop_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shopaccdemo/application/views/test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shopedemo/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shopedemo/application/controllers/Admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shopedemo/application/controllers/cart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shopedemo/application/controllers/sanpham.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shopedemo/application/models/shoppe_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shopedemo/application/views/public/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shopedemo/application/views/public/head.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shopedemo/application/views/public/sanpham.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shopedemo/assets/css/sanpham.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shopedemo/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shoppe/public/responsive/girds.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shoppe/public/resposive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shoppe/public/testhtml.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shoppe/public/testjs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test_MVC/mvc_coban/controllers/home.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test_MVC/mvc_coban/controllers/news.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test_MVC/mvc_coban/core/DB.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test_MVC/mvc_coban/core/controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test_MVC/mvc_coban/models/sinhvienmodel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test_MVC/mvc_coban/views/aodep.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test_MVC/mvc_coban/views/page/page1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test_MVC/mvc_coban/views/page/page2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FUNCTION.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../blog/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../get.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/Untitled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/bocap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/images.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../img/songtu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../index2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../index3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../indexs.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../máy ATM.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php cơ bản/cac_ham_su_dung.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php cơ bản/cac_ham_su_dung.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php cơ bản/file_in_php/file.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php cơ bản/file_in_php/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php cơ bản/file_in_php/xuly.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php cơ bản/test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php cơ bản/test0.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php cơ bản/test1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php cơ bản/test3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php2/.idea/php2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php2/functions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php2/input.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php2/input.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_string_chuan-hoa.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_url.php" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="26sD0tWYf1mop4b31cuQvlzPCNS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shoppe" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3f4aadc3-2b47-40f4-b1fc-f9a16d159b11" name="Default Changelist" comment="" />
+      <created>1648203181536</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648203181536</updated>
+      <workItem from="1648203183114" duration="19000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

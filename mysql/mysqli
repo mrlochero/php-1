@@ -1,0 +1,63 @@
+$severname = 'localhost';
+$database = 'name_database';
+$username = 'root';
+$password = '';
+
+
+1. Sử dụng MySQLi Procedural:
+
+    // tạo kết nối
+    $conn = mysqli_connect('$severname' ,'$username', '$password' , '$database');
+
+    // kết nối thất bại
+    if (!conn)
+    {
+        die('kết nối thất bại' . mysqli_connect_error());
+    }
+
+    // câu lệnh sql
+    $sql = "SELECTOR * FROM";
+
+    // thực thi truy vấn
+    mysqli_query($conn, $sql);
+
+    // ngắt kết nối
+    mysqli_close($conn);
+
+* các hàm trong mysqli :
+    // lấy id
+     mysqli_insert_id();
+
+    // để thực hiện nhiều câu lệnh truy vấn:
+     mysqli_multi_query();
+        vd : $sql = "câu sql;câu sql2;...";
+             mysqli_muti_query($sql);
+
+
+2.Sử dụng PDO:
+    try {
+        // chuỗi kết nối
+            $conn = new PDO("mysql:host = '$severname', '$username','$password','$database');
+
+        // thiết lập chế dộ exception
+        $conn->setAttribute('PDO::ATTR_ERMODE', PDO::ERMOD_EXCEPTION);
+
+        // Câu lệnh truy vấn
+        $sql = "SLECT * FROM name_table";
+
+        // thực thi truy vấn
+        $conn->exec($sql);
+
+        }
+    catch(PDOException $e)
+    {
+        echo $e->getMesage();
+    }
+
+    // ngắt kết nối
+    $conn = null;
+
+** các hàm tỏng PDO :
+      // lấy id
+       $last_id = $conn->lastInsertId();
+       // để thực hiện nhiều câu lệnh truy vấn:

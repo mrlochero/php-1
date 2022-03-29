@@ -1,0 +1,79 @@
+
+
+
+
+
+                    //OOP
+ - OOP là viết tắt của Object-Oriented Programming,
+   hay còn gọi là lập trình hướng đối tượng.
+ - lập trình truyền thống thì có một số nhược điểm đó là code rất dài,
+    khả năng bảo trì kém
+  - Lớp(class) và đối tượng(object) với các ưu điểm sau:
+
+    OOP nhanh hơn và dễ thực thi hơn.
+    OOP cung cấp một cấu trúc rõ ràng cho các chương trình.
+    OOP giúp giữ cho mã PHP “Không lặp lại” và làm cho mã dễ bảo trì, sửa đổi và gỡ lỗi hơn.
+    OOP giúp bạn có thể tạo các ứng dụng có thể tái sử dụng đầy đủ với ít mã hơn và thời gian phát triển ngắn hơn.
+
+-  instanceof để kiểm tra xem object có thuộc về 1 class cụ thể hay không.
+    + VD : if ($buffalo instanceof Animal) {
+              echo "Đối tượng buffalo là một thể hiện của class Animal";
+           }
+
+1. Hàm khởi tạo (constructor) : __construct() {}
++ constructor cho phép bạn khởi tạo các thuộc tính của đối tượng khi tạo đối tượng.
++PHP sẽ tự động gọi function này khi bạn tạo một object từ một class.
+        ! Lưu ý, nếu một class B kế thừa từ class A,
+          nếu không định nghĩa hàm khởi tạo nó sẽ lấy hàm khởi tạo của class cha (class A)
+          nếu định nghĩa hàm khởi tạo riêng class B
+          ta phải gọi hàm khởi tạo của class cha, ta sử dụng parent::__construct().
+          
+2. Hàm hủy (destructor) :
+
+
+                    //
+ 3. Interface :
+                    - trong hướng đối tượng là một khuôn mẫu, giúp cho chúng ta tạo ra bộ khung cho một hoặc nhiều đối tượng
+
+                    - Sau đây mình sẽ liệt kê ra các tính chất của interface:
+                        Interface không phải là một đối tượng.
+                        Trong interface chúng ta chỉ được khai báo phương thức chứ không được định nghĩa chúng.
+                        Trong interface chúng ta có thể khai báo được hằng nhưng không thể khai báo biến.
+                        Một interface không thể khởi tạo được (vì nó không phải là một đối tượng).
+                        Các lớp implement interface thì phải khai báo và định nghĩa lại các phương thức có trong interface đó.
+                        Một class có thể implement nhiều interface.
+                        Các interface có thể kế thừa lẫn nhau.
+
+   4. Static :
+                    trong lập trình hướng đối tượng là một thành phần tĩnh (có thể là thuộc tính hoặc phương thức)
+                    mà nó hoạt động như một biến toàn cục,
+                    dù cho nó có được xử lý ở trong bất kỳ một file nào đi nữa (trong cùng một chương trình) thì
+                    nó đều lưu lại giá trị cuối cùng mà nó được thực hiện vào trong lớp.
+
+                    có thể gọi thành phần tĩnh bằng các cách sau:
+                    – self::$name
+                    – ClassName::$name
+                    – static::$name
+                         gọi trong class kế thừa :
+                            class ConTrau extends DongVat
+                            {
+                                public function getName()
+                                {
+                                parent::getName();
+                                }
+                            }
+   5. final :
+                   - là một class mà bạn chỉ có thể khởi tạo nó chứ không thể kế thừa được.
+                   - Một phương thức nếu là final thì bạn sẽ không ghi đè lại được.
+   6.Traits :
+                    -PHP chỉ hỗ trợ kế thừa độc lập: Một class con chỉ có thể kế thừa từ một class cha mà thôi.
+                    -nếu bạn muốn kế thừa nhiều class khác. PHP traits sẽ giúp bạn giải quyết vấn đề này.
+
+                    - cú pháp : trait TraitName {}
+                    - Để sử dụng traits trong một class, ta có thể sử dụng từ khóa: use
+                        class MyClass {
+                            use TraitName;
+                          }
+
+                    -sử dụng hay nhiều  2 traits  trong cùng một class, bằng cách khai báo thêm dấu (,)
+                            use message1, message2;

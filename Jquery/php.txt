@@ -1,0 +1,82 @@
+1.Phân biệt POST và GET trong php?
+    - giống : đều dùng để truyền dữ liệu từ client lên sever
+    - khác :
+    + GET kém bảo mật hơn vì dữ liệu truyền lên có thể nhìn thấy ở thanh địa chỉ URL
+    + POST bảo mật hơn GET dữ liệu gửi lên không thể thấy bằng mắt thường.
+    + GET tốc độ nhanh hơn POST.
+
+2.Sự khác nhau giữ biến và hằng?
+    - Biến : giá trị của biến có thể được gán lại , thay đổi.
+    - Hằng : giá trị của hằng không thể thay đổi.
+
+3.  sự khác nhau của toán tử & và && trong PHP là gì?
+    - giống :  đều là toán tử AND.
+    - khác : +  & : đánh giá cả 2 mặt trái phải của biểu thúc để thu kết quả
+              + && : chỉ đánh giá lần lượt phía bên trái của biểu thức
+                     chỉ trả về kiểu boolean( true,false ).
+
+4. Sự khác nhau giữa == và === ?
+    - == : so sánh trừu tượng tự chuyển đổi sang kiểu dữ liệu cần thiết để so sánh.
+
+    - === : so sánh cân bằng nghiêm ngặt không chuyển đổi kiểu dữ liệu
+            nếu không cùng kiểu dữ liệu kết quả sẽ là false.
+
+5. sự khác nhau giữ emty() và isset()?
+    - emty() : hàm kiểm tra xem biến chưa được khởi tạo hay có giá trị "rỗng".
+               nếu chưa khởi tạo hay biến "rỗng" sẽ trả về true, ngược lại false.
+    - isset(): hàm kiểm tra xem biến được khởi tạo hay chưa
+                nếu đã được khởi tạo kể cả mang giá trị "rỗng" thì trả về true, ngược lại false
+
+6.Tìm một phần tử tồn tại trong mảng ta dùng hàm gì ?
+    - in_array($value, $array);
+        + trong đó : $value là giá trị cần kiểm tra.
+                     $array là mảng đưuọc keierm tra.
+                     chú ý : $value sẽ không phân biệt chữ HOA hay thường.
+
+7. Đếm số phần tử trong mảng dùng hàm nào?
+    -count($array)
+    -sizeof($array)
+        + trong đó $array là mảng cần kiểm tra.
+
+8. Hàm nào  sẽ chuyển một chuỗi $string thành một mảng các phần tử?
+    - explode($delimiter, $string).
+            + trong đó : $delimiter là ký tự tách mảng.
+                         $string là chuỗi chuyển đổi.
+
+9. Nêu các tính chất của OOP, và giải thích chúng
+    - tính đóng gói (Encapsulation): Là cách để che dấu những tính chất xử lý bên trong của đối tượng
+                                     những đối tượng khác không thể tác động trực tiếp làm thay đổi trạng thái
+                                     chỉ có thể tác động thông qua các method public của đối tượng đó.
+
+    -Tính kế thừa (Inheritance): Là kỹ thuật cho phép kế thừa lại những tính năng mà một đối tượng khác đã có,
+                                 giúp tránh việc code lặp dư thừa mà chỉ xử lý công việc tương tự.
+
+    - Tính đa hình (Polymorphism ): Là một đối tượng thuộc các lớp khác nhau có thể hiểu cùng một thông điệp theo cách khác nhau.
+
+    - Tính trừu tượng(Abstraction): phương pháp trừu tượng hóa định nghĩa lên những hành động, tính chất của loại đối tượng nào đó cần phải có.
+                                    có 2 phương pháp để triển khai tính trừu tượng này: abtrast class và interface
+
+10. Class và object có gì khác nhau?
+    - class :  là một bản thiết kế cho object định nghĩa các thuộc tính và phương thức chung.
+
+    - object :  là đối tượng được xây dựng dựa trên khuôn mẫu class.
+
+11. phân biệt abtrast class và interface?'
+    - Interface :  Khi sử dụng Interface là bạn Implement
+                    + Không phải là class.
+                    + Chỉ chứa những method properties trống không thực thi.
+                    + Nó giống như một khuôn mẫu, một khung để để các lớp implement và follow.
+                    + Các lớp có thể implements nhiều interface.
+                    + Là một contract, các class implement phải triển khai
+                        các method theo như interface đã định nghĩa.
+
+    - abtrast : để sử dụng phải extend
+                    + có thể làm nhiều việc hơn interface.
+                    + Có 2 loại method là abstract method và method thường :
+                            * abstract method là method trống không có thực thi.
+                            * method thường là method có thực thi.
+                    + Các lớp chỉ có thể kế thừa một Abstract class
+12. Phân biệt require và include?
+    - require : khi import một file nếu chương trình bị lỗi
+                thì lập tức trình biên dịch sẽ dừng và xuất ra thông báo lỗi.
+    - include : khi import thì chỉ cảnh báo và chương trình vẫn chạy.

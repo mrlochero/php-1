@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="03cd2edc-15ab-4d8d-b93e-2fbb3c514360" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../chucnangbinhluan/binhluan.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chucnangbinhluan/connect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chucnangbinhluan/sanpham.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PUBLIC/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PUBLIC/index2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oop_php/classes/Nguoidung.classs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oop_php/classes/Taikhoan.classs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oop_php/classes/thanhtoan.classs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oop_php/includes/Autoload_Class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oop_php/method Static.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../oop_php/public_private_protected.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdo/config/connect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdo/config/getPDO.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdo/config/insertPDO.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdo/config/pdo_lythuyet.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pdo/config/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FUNCTION.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../get.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../img/Untitled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../img/bocap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../img/images.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../img/songtu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../index2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../index3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../indexs.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../máy ATM.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../php cơ bản/cac_ham_su_dung.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../php cơ bản/cac_ham_su_dung.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../php cơ bản/file_in_php/file.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../php cơ bản/file_in_php/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../php cơ bản/file_in_php/xuly.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../php cơ bản/test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../php cơ bản/test0.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../php cơ bản/test1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../php cơ bản/test3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../php2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../php2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../php2/.idea/php2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../php2/functions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../php2/input.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../php2/input.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test_string_chuan-hoa.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test_url.php" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="23iSeQzx68TUzktcsBYQZxK4Chm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../test_MVC" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\php_coban\mvc_cb\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\php_coban\mvc_cb\public" />
+      <recent name="D:\xampp\htdocs\php_coban\mvc_cb\PUBLIC" />
+      <recent name="D:\xampp\htdocs\php_coban\mvc_cb" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="03cd2edc-15ab-4d8d-b93e-2fbb3c514360" name="Default Changelist" comment="" />
+      <created>1642215509106</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642215509106</updated>
+      <workItem from="1642215510651" duration="1777000" />
+      <workItem from="1642217790659" duration="4699000" />
+      <workItem from="1642300728547" duration="1441000" />
+      <workItem from="1642332222407" duration="984000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

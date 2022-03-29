@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.item {
+    margin-top: 12px;
+    background-color: antiquewhite;
+    height: 380px;
+    line-height: 380px;
+    align-items: center;
+}
+.item2 {
+    margin-top: 12px;
+    background-color: #f19f33;
+    height: 180px;
+    line-height: 180px;
+    align-items: center;
+    margin-left:0px;
+    padding: 12px;
+}

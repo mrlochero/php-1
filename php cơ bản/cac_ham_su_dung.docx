@@ -1,8 +1,0 @@
-<?php
-
-
-        // hàm xử lý chuỗi :
-1. strlen(); //đếm chuỗi;
-2. str_word_count(); // đếm từ trong chuỗi;
-3. strrev(); // đảo ngược chuỗi;
-4. strpos(" văn bản","đoạn văn bản muốn tìm") //

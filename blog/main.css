@@ -1,0 +1,67 @@
+/*body__web*/
+.body__web {
+    background-image: url("./img/anhnen.png");
+    margin: 0;
+    position: relative;
+}
+.body__web-blur {
+    background-color: rgba(210, 206, 206, 0.06);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+/*navbar*/
+.navbar {
+    height: 80px;
+    width: 100%;
+    background-color: #080707d9;
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+    border-radius: 2px ;
+    position: fixed;
+    top: 0;
+    right: 69px;
+    left: 69px;
+    border: 3px #2d4ef9  solid;
+
+}
+.navbar__item1__ul {
+    width: 180px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 26px;
+}
+.navbar__item2__ul {
+    width: 280px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 26px;
+}
+.navbar a{
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 400;
+    display: inline-block;
+}
+    .navbar a:hover {
+        color: #1559e8;
+    }
+.navbar i {
+    color: #eeeeee;
+}
+
+/*body*/
+.body2__img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.body2__img img {
+    width: 616px;
+    height: 530px;
+    border-radius: 20px;
+    border: #a6dadf solid 2px;
+
+}

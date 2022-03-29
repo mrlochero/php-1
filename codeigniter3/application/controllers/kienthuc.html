@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>kiến thức</title>
+</head>
+<body>
+	<p>
+		load view :
+		$this->load->view('view_name');
+
+		model :
+		- load db :
+		+ $this->load->database();
+		- load model :
+		+ $this->load->model('model_name');
+
+		Form Helper :
+		+ nhanh chóng tạo ra các form dùng để nhập liệu
+		b1 : gọi ra helper muốn s/d:
+			$this->load->helper('form');
+
+		b2 : load view
+		$this->load->view('name');
+
+		b3: s/d ở view
+		echo form_label("NHẬP: ").form_input(array('value'=>'giá trị sẵn có'))
+
+			// các hàm helper form khác :
+			form_open: Mở thẻ form.
+			form_close: Đỏng thẻ form.
+			form_input: Tạo thẻ input với type là text.
+			form_label: Tương đương với thẻ label trong html.
+			form_password: Thẻ input với type là password.
+			form_upload: Thẻ input với tyle là file
+			form_textarea: Thẻ textarea.
+			form_dropdown: Thẻ select option trong form.
+			form_radio: Thẻ tạo nút chọn trong form.
+			form_submit: Thẻ input với type là submit.
+			form_fieldset: Thẻ mở fieldset trong form.
+			form_fieldset_close: Thẻ đóng fieldset trong form.
+
+		Các Helper thông dụng :
+			- CAPTCHA Helper
+			- Date Helper
+			- Download Helper
+			- Email Helper
+			- HTML Helper
+			- Language Helper
+			- Security Helper
+			- Text Helper
+			- String Helper
+
+
+		library Form Validation:
+
+- tải thư viện :
+		$this->load->library('form_validation');
+- tải helper đi kèm:
+		$this->load->helper('form');
+- s/d hàm :
+		$this->form_validation->hàm();
+* Các phương thức :
+		- set_rules : tạo các tập luật , 3 tham số :
+			+ vtri 1 : name form
+			+ vtri2 : name xuất ra tb lỗi
+			+ vtri 3: tập luật cách nhau "|".
+	vd : $this->form_validation->set_rules('name', 'họ tên', required|min_length[8]');
+			++ các tập luật hay dùng :
+				+ required : y/c nhập ko đc để trống;
+				+ matches: s/d khi 2 ô nhập dữ liệu giống nhau (nhập lại pass);
+				+ min_length : số ký tự tối thiểu
+				+ max_length : số ký tự tối đa;;
+				+ numeric : y/c trong textbox phải nhập số;
+				+valid_email : email bắt buộc đúng định dạng;
+				+ xss+clean :  xóa xss của input, bảo mật;
+				+ exact_length: ktra đ/k bằng độ dài đc gắn gtri (exact_lenght[8])
+				+ greater_than  : ktra đ/k phải lớn hơn độ dài đc gắn giá trị(greater_than[8])
+				+ les_than : ktra đ/k phải nhỏ hươn độ dài đc gắn gtri(les_than[8])
+				+callback_ : gọi 1 hàm xử lý khác
+
+		- hàm run(): ktra các tập lệnh trên hợp lệ hay ko kết quả trả về : true/false;
+		- hàm validation_errors() : t/h run() trả về false s/d để thông báo lỗi
+		- hàm form_error(): hiễn thị lỗi của 1 thẻ input
+		- hàm set_value(): lưu lại n/d của thẻ input nhập vào(khi sai phải nhập lại)
+
+
+		library upload:
+- tải thư viện :
+		$this->load->library('upload);
+- cấu hình :
+		đường dẫn ,
+		định dạng hình ảnh được phép upload,
+		kích thước tấm hình,
+		cũng như dung lượng tấm hình được phép upload.
+
+		$config['upload_path'] = './uploads/';
+		$config['allowed_types'] = 'gif|jpg|png';
+		$config['max_size'] = '100';
+		$config['max_width']  = '1024';
+		$config['max_height']  = '768';
+- thực thi việc upload:
+		$this->upload->do_upload('ten_file')
+- câu lệnh debug:
+		$this->upload->data();
+- thông báo lỗi:
+		$this->upload->display_errors;
+	</p>
+</body>
+</html>

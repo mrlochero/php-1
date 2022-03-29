@@ -1,0 +1,68 @@
+<div>
+    <button class="btn btn--size-s btn--success btn--disabled" > GO TO NEXT APPROVAL</button>
+    <button class="btn btn--size-s btn--warn" > OK </button>
+    <button class="btn btn--size-s btn--danger" > TRY AGAIN </button>
+</div>
+<br>
+<div>
+    <button class="btn btn--size-m btn--success " > GO TO NEXT APPROVAL</button>
+    <button class="btn btn--size-m btn--warn btn--disabled" > OK </button>
+    <button class="btn btn--size-m btn--danger" > TRY AGAIN </button>
+</div>
+<br>
+<div>
+    <button class="btn btn--size-l btn--success " > GO TO NEXT APPROVAL</button>
+    <button class="btn btn--size-l btn--warn" > OK </button>
+    <button class="btn btn--size-l  btn--danger btn--disabled" > TRY AGAIN </button>
+</div>
+
+<style>
+
+/*BLOCK*/
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 8px 42px;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: opacity .03 ease;
+    min-width: 120px;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn + .btn {
+    margin-left: 16px;
+}
+.btn--success {
+background-color: #71be34;
+}
+.btn--warn {
+background-color: #ffb702 ;
+}
+.btn--danger {
+background-color: #ff623e;
+}
+
+.btn--disabled, .btn[disabled] {
+    opacity: 0.4 !important;
+    cursor: default;
+}
+
+.btn--size-s {
+    padding: 8px 32px;
+}
+.btn--size-m {
+    padding: 14px 42px;
+}
+.btn--size-l {
+    padding: 18px 52px;
+}
+</style>

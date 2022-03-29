@@ -1,0 +1,151 @@
+$severname = 'localhost';
+$database = 'name_database';
+$username = 'root';
+$password = '';
+
+
+1. Sử dụng MySQLi Procedural:
+
+    // tạo kết nối
+    $conn = mysqli_connect('$severname' ,'$username', '$password' , '$database');
+
+    // kết nối thất bại
+    if (!conn)
+    {
+        die('kết nối thất bại' . mysqli_connect_error());
+    }
+
+    // câu lệnh sql
+    $sql = "SELECTOR * FROM";
+
+    // thực thi truy vấn
+    mysqli_query($conn, $sql);
+
+    // ngắt kết nối
+    mysqli_close($conn);
+
+* các hàm trong mysqli :
+    - lấy id
+     mysqli_insert_id();
+
+    - để thực hiện nhiều câu lệnh truy vấn:
+     mysqli_multi_query();
+        vd : $sql = "câu sql;câu sql2;...";
+             mysqli_muti_query($sql);
+    - Prepared : bảo mật chống lỗi lỗi SQL injection
+           // câu sql
+           $sql = ""INSERT INTO news (title,content) VLAUES(?, ?);
+
+           // tạo đối tượng repared
+           $stmt = $conn->prepare($sql);
+
+           // gắn giá trị vào tham số ẩn danh "?"
+           $stmt->bind_param("ss",$title, $content);
+
+           // thực thi truy vấn
+           $title = 'tiêu dề 1';
+           $content = 'nội dung 1';
+           $stmt->execute();
+
+           // giải phóng và ngắt kết nối;
+           $stmt->close();
+           $conn->close();
+
+2.Sử dụng PDO:
+    try {
+        // chuỗi kết nối
+            $conn = new PDO("mysql:host = '$severname', '$username','$password','$database');
+
+        // thiết lập chế dộ exception
+        $conn->setAttribute('PDO::ATTR_ERMODE', PDO::ERMOD_EXCEPTION);
+
+        // Câu lệnh truy vấn
+        $sql = "SLECT * FROM name_table";
+
+        // thực thi truy vấn
+        $conn->exec($sql);
+
+        }
+    catch(PDOException $e)
+    {
+        echo $e->getMesage();
+    }
+
+    // ngắt kết nối
+    $conn = null;
+
+** trong PDO :
+      - lấy id
+       $last_id = $conn->lastInsertId();
+
+      - để thực hiện nhiều câu lệnh truy vấn: phải thực thi từng lệnh 1
+
+       // start transaction : nếu lỗi  sẽ rollback lại toàn bộ trạng thái ban đầu.
+       $conn->beginTransaction();
+
+       //thực thi câu truy vấn
+       $conn->exec($sql1);
+       $conn->exex($sql2);
+
+       // nếu thành công
+       $conn->commit();
+
+       - Prepared : bảo mật chống lỗi lỗi SQL injection
+        // câu sql
+        $sql = "INSERT INTO user(title, content) VALUES (:title, :content)";
+
+        //tạo đối tượng repared
+        $stmt = $conn->prepare($sql);
+
+        //gắn value vào tham số ẩn danh :varname
+        $stmt->bindParam(':title', $title);
+        $stmt->bindParam(':content', $content);
+
+        // thêm 1 lần và thực thi:
+        $title = "tiêu dề 1";
+        $content = "content 1";
+        $stmt->execute;
+
+        // thêm 2 lần và thực thi:
+          $title = "tiêu dề 2";
+          $content = "content 2";
+          $stmt->execute;
+
+        // ngắt kết nối
+        $conn = null;
+
+
+* Select data với PDO : dùng cơ chế Prepared để truy vấn CSDL.
+    // kết nối CSDL
+    $conn;
+
+    // Khai báo exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    // sử dụng prepare
+    $stmt = $conn->prepare("SELECT id, title, content FROM name_table");
+
+    //thực thi truy vấn
+    $stmt->execute();
+
+    // khai báo fetch kiểu mảng kết hợp
+    $stmt->setFetchMode(PDO::FETCH_ASSOC);
+
+    // lấy danh sách két quả
+    $result = $stmt->fetchAll;
+
+    // dùng vòng lặp để lặp kết quả
+    foreach ($result as $item){}
+
+- các hàm trong PDO
+PDO::query – Chạy câu lệnh sql (thường là select), trả về đối tượng chứa dữ liệu
+PDOStatement::fetch –  Lấy ra 1 dòng dữ liệu, kết quả là 1 array
+PDOStatement::fetchAll –  Lấy ra tất cả các dòng dữ liệu , kết quả là 1 array
+PDOStatement::fetchObject – Lấy ra 1 dòng dữ liệu row and returns it as an object.
+PDO::exec – Chạy câu lệnh sql, (thường là insert, update, delete) , trả về số dòng ảnh hưởng
+PDOStatement::rowCount – Trả về số dòng ảnh hưởng bởi câu lệnh sql vừa chạy. Dùng để đểm số dòng dữ liệu lấy được chẳng hạn
+PDO::prepare –  Tạo đối tượng statement để chuẩn bị thực thi sau đó bởi hàm execute
+PDOStatement::execute –  thực thi statement đã tạo trước
+PDO::lastInsertId –  trả về id của record mới vừa chèn  vào table
+PDO::commit –  cho tác dụng các thực thi trong transaction
+PDO::rollBack – Thu hồi lại transaction

@@ -1,0 +1,130 @@
+*tạo database : CREATE DATABASE tên_database;
+
+- chọn database  : USE tên_database;
+
+*Câu lệnh tạo bảng : 
+- CREATE TABLE tên_bảng ( tên_cột1 data_type(size), tên_cột2 data_type(size)...)
++ vd : CREATE TABLE sanpham ( id int , name varchar(255) )
+
+*Cú pháp thêm dữ liệu vào bảng:
+- INSERT INTO tên_bảng ( cột_1 , cột_2 , cột_3 ) VALUES (value1, value2, value3)
++vd : INSERT INTO sanpham (name, price, price_sale) VALUES ('máy chạy', '15.000','12.000')
+
+* cú pháp xóa:
+- xóa db : DROP DATABASE db_name 
+- xóa bảng : DROP TABLE tb_name
+
+* Câu lệnh truy xuất dữ liệu :
+- SELECTOR * FROM name_table;  dấu "*" là chọn hết các cột của bảng;
+- SELECTOR cột_1, cột_2 FROM name_table ;
+
+
+
+# UNIQUE : DUY NHẤT 
+
+-C1 TẠO TRONG TẠO BẢNG : UNIQUE hoặc UNIQUE (username)
+-c2 Sử dụng Alter Table để tạo : 
+	+ ALTER TABLE tab_name ADD UNIQUE (id)
+	+ ALTER TABLE tab_name ADD UNIQUE (name)
+-c3 : Sử dụng CONSTRAINT - khuyến khích vì dễ xóa
+	+ cú pháp : CONSTRAINT tên_unique UNIQUE(col)
+	+ vd: CONSTRAINT user_unique UNIQUE (username)
+- cách xóa : ALTER TABLE name_tab DROP INDEX tên_unique
+
+
+# Alter Table : thay đổi cấu trúc cột
+
+	- sửa col : ALTER TABLE name_tab CHANGE COLUMN name_col  các giá trị cần thay đổi
+	   vd : ALTER TABLE user CHANGE COLUMN name VARCHAR(25) NOT NULL 
+	- thêm col : ALTER TABLE name_tab ADD COLUMN name_col INT(20) DEFAULT 0  
+	- đổi tên : ALTER TABLE name_tab RENAME TO name_new
+
+		SELECT id
+            FROM user 
+		WHERE id != 1
+		ORDER BY id ASC
+		LIMIT 0,4
+
+# ORDER BY  : cách sắp xếp kết quả 
+	+ ASC : tăng dần
+	+ DESC : giảm dần
+
+# LIMIT : giới hạn kết quả
+	+ star : vị trí lấy
+	+ limit : giới hạn kết quả
+
+# WHERE : điều kiện
+	- IN : kiểm tra giá trị của field đó có nằm trong một tập hợp nào đó hay không
+		+ vd: WHERE sv_name IN ('Mr Cuong', 'Mr Kinh', 'Mr Chinh')
+	- LIKE : tìm những dòng nào mà có dữ liệu giống với cấu trúc lệnh LIKE truyền vào.
+		+ Ký hiệu % : sẽ đại diện cho 0 hoặc nhiều ký tự vd: WHERE sv_name LIKE '%Cuong%'
+		+ Ký hiệu _ : đại diện cho một ký tự bất kì
+
+# AS (Alias) : để đặt lại tên mới cho Table, Column.
+	- có 2 cách viết : old_name AS new_name
+	 			 old_name new_name
+# UNION : 	
+-Toán tử UNION cho phép bạn nối kết quả của hai hoặc nhiều câu truy vấn lại với nhau
+ để trở thành một danh sách kết quả duy nhất.
+	+ UNION DISTINCT thì nó sẽ loại bỏ kết quả trùng.(MẶC ĐỊNH)
+	+ UNION ALL thì nó giữ lại kết quả trùng.
+
+	++ VD : SELECT id, title FROM news_1
+		 UNION
+		 SELECT id, title FROM news_2
+
+# BETWEEN : 
+-để xác định dữ liệu trong một khoảng nào đó.
+	+ cú pháp : field_name BETWEEN begin AND end
+		++ vd :	 SELECT * FROM sinhvien
+		 		 WHERE năm_sinh BETWEEN 1999 AND 2022
+
+- NOT BETWEEN : xác định dữ liệu không trong một khoảng nào đó.
+	+ cú pháp : field_name NOT BETWEEN begin AND end
+
+	* lưu ý : thường sử dụng với dữ liệu kiểu INT
+		nếu dùng với kiểu : DATE: Bạn nên sử dụng thêm hàm CASE
+						  chuyển dữ liệu sang dạng DATE để có kết quả chính xác nhất.	
+						vd : SELECT * FROM sinhvien
+							WHERE ten_sv BETWEEN  CAST('2003-01-01' AS DATE) AND CAST('2014-01-01' AS DATE)
+# CONCAT :  Hàm nối chuỗi 
+- cú pháp : concat(str, str2,...)
+
+# INNER JOIN : để liên kết hai bảng với nhau. 	
+	- INNER JOIN sẽ được đặt ở FROM
+ 	-vd: SELECT * FROM sinh_vien 
+			  INNER JOIN khoa_hoc ON sinh_vien.id = khoa_hoc.id
+			  INNER JOIN khoa_hoc2 ON sinhvien_id = khoa_hoc2.id
+
+- lưu ý : SELECT với cột nào bị trùng thì ta phải sử dụng cú pháp tenbang.tenfield. vd: SELECT id.sinhvien 
+-  INNER JOIN với ALIAS : vd: FROM sinh_vien AS sv INNER JOIN lớp AS class ON sv.id = class.id
+
+# LEFT JOIN : để liên kết hai bảng với nhau và sẽ lấy thêm dữ liệu không khớp ở bảng bên trái. 
+- A Left join B: Trả về kết quả thỏa ở điều kiện ON và những record không thỏa ở bảng A.
+
+# RIGHT JOIN :  để liên kết hai bảng với nhau và sẽ lấy thêm dữ liệu không khớp ở bảng bên phải. 
+- a RIGHT JOIN b: Trả về kết quả thỏa ở điều kiện ON và những record không thỏa ở bảng b.
+
+# GROUP BY : - sẽ gom nhóm dữ liệu và chỉ trả về một record cho một nhóm duy nhất
+	- thường kết hợp với các hàm như: SUM ( cộng)
+			 AVG, MAX ( lớn nhất ), MIN và COUNT(đếm) 
+ 		để đếm hoặc lấy thông tin cần thiết trả về cho từng nhóm.
+- cú pháp : SELECT 
+			col1, col2
+		FROM 
+			table
+		WHERE 
+			điều kiện
+		GROUP BY 
+			col1, col2
+- lưu ý : + GROUP BY có khoảng trắng và nó nằm sau câu lệnh WHERE
+	    + những filed có trong GROUP BY phải có trong câu SELECT
+	    + thứ tự thực thi câu lệnh  : From -> Where -> Select -> Group By -> Having -> Order By -> Limit
+
+# having : tồn tại thường dùng trong GROUP BY
+
+#sub query : là một truy vấn sẽ được lồng trong một câu truy vấn khác.
+
+
+
+

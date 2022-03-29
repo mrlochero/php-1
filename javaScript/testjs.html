@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test js</title>
+</head>
+<body>
+<script>
+  var array1 = [1,2,3,4,5];
+  var ar2 = [
+      {
+          name : "ruby",
+          coin: 100
+      },
+      {
+          name : "ruby2",
+          coin: 200
+      },
+      {
+          name : "ruby3",
+          coin: 1100
+      },
+  ]
+
+                // Map2()
+  // Array.prototype.map2 = function (callback) {
+  //     var output = [];
+  //     for(var index in this) {
+  //       var result = callback(this[index],index);
+  //       console.log (output.push(result));
+  //     }
+  //     return output;
+  // }
+  // console.log(array.map2(function (value, index) {
+  //
+  // }))
+
+                    // ForEach2
+ //  Array.prototype.forEach2 = function (callback) {
+ //            for ( var index in this) {
+ //                if (this.hasOwnProperty(index)) {
+ //                    callback(this[index], index , this);
+ //                }
+ //            }
+ //
+ //  }
+ // var foreach3 =  array1.forEach2(function (value, index , array) {
+ //        console.log(index , value , array);
+ //  });
+
+                    // filter
+
+  Array.prototype.filter2 = function (callback) {
+      var output = [];
+      for (var index in this) {
+          if(this.hasOwnProperty(index)) {
+              var result = callback(this[index], index, this);
+              if(result) {
+                    output.push(this[index])
+              }
+          }
+      }
+      return output;
+  }
+
+  var a = ar2.filter2(function (value, index, array) {
+      return value.coin > 700;
+  });
+  console.log(a)
+</script>
+</body>
+</html>

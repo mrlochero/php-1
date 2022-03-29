@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.haha{
+	with: 800px;
+	height:800px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #00CC00;
+
+}
+.Basic {
+	display: flex;
+	width: 1;
+	height: auto;
+}
+.Premium {
+	width: 1;
+	height: auto;
+	display: flex;
+}

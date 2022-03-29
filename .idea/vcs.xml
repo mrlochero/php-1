@@ -2,5 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Jquery" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Jquery/Jquery" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/shopaccdemo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/shopedemo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/shoppe" vcs="Git" />
   </component>
 </project>
